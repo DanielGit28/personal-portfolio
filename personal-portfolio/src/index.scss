@@ -2,7 +2,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Noto+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Noto+Serif&display=swap');
 //Constants
+@import "./styles/constants.scss";
 
+//Mixins (if needed)
+@import "./styles/mixins.scss";
+
+//atoms
+@import "./components/atoms/H1/H1.scss";
+@import "./components/atoms/H2/H2.scss";
+@import "./components/atoms/H3/H3.scss";
+@import "./components/atoms/P/P.scss";
 
 //Components
+@import "./components/Welcome/Welcome.scss";
+@import "./components/Content/Content.scss";
+@import "./components/MobileMenu/MobileMenu.scss";
+@import "./components/Hero/Hero.scss";
+@import "./components/Projects/Projects.scss";
+@import "./components/Projects/ProjectItem/ProjectItem.scss";
+@import "./components/Projects/Stages/Stages.scss";
 @import "./components/Home/Home.scss";
+
+
+//Base
+@import "./styles/base.scss";

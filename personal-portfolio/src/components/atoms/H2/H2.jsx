@@ -1,10 +1,10 @@
 
-const H2 = () => {
+const H2 = ( {children, className}) => {
 
     return (
-        <div className="home">
-            Home
-        </div>
+        <h2 className={`h2 ${className}`}>
+            {children}
+        </h2>
     )
 }
 export default H2

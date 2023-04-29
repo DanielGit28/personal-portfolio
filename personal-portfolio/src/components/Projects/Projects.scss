@@ -1,0 +1,14 @@
+.projects {
+    @include flex($direction: column, $justify-content: center, $align-items: center);
+    width: 100%;
+    &__title {
+        margin-bottom: 40px;
+        &__cnt {
+            @include flex($direction: column, $justify-content: center, $align-items: flex-start);
+            width: 60%;
+        }
+    }
+    &__cnt {
+        width: 60%;
+    }
+}

@@ -1,10 +1,10 @@
 
-const H3 = () => {
+const H3 = ( {children,className}) => {
 
     return (
-        <div className="home">
-            Home
-        </div>
+        <h3 className={`h3 ${className}`}>
+            {children}
+        </h3>
     )
 }
 export default H3

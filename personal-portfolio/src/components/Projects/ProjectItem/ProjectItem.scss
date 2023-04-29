@@ -1,0 +1,37 @@
+.project-item {
+    width: 80%;
+    @include flex($direction: column, $justify-content: center, $align-items: flex-start);
+    &__images {
+        width: 100%;
+        &__main {
+            @include flex($direction: column, $justify-content: center, $align-items: flex-start);
+            width: 300px;
+            height: 230px;
+        }
+        &__secondary {
+            position: relative;
+            bottom: 50px;
+            right: -130px;
+            width: 250px;
+            height: 160px;
+        }
+    }
+    &__title {
+        margin-bottom: 24px;
+    }
+    &__text {
+        font-size: 16px;
+        text-align: left;
+        margin-bottom: 24px;
+    }
+    @include breakpoint($laptop) {
+        &__images {
+            
+            &__main {
+                @include flex($direction: column, $justify-content: center, $align-items: flex-start);
+                width: 90%;
+                height: 270px;
+            }
+        }
+    }
+}

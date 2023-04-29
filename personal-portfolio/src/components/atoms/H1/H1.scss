@@ -1,0 +1,11 @@
+.h1 {
+    font-size: $h1;
+    font-weight: 700;
+    font-family: $font-libre;
+    @include breakpoint($laptop) {
+        font-size: 64px;
+    }
+    @include breakpoint($desktop) {
+        font-size: 96px;
+    }
+}

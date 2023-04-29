@@ -1,10 +1,10 @@
 
-const P = () => {
+const P = ( {children, className}) => {
 
     return (
-        <div className="home">
-            Home
-        </div>
+        <p className={`p ${className}`}>
+            {children}
+        </p>
     )
 }
 export default P

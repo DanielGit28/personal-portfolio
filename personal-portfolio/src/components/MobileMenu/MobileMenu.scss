@@ -1,0 +1,41 @@
+.mobile-menu {
+    @include flex($direction: column, $justify-content: center, $align-items: center);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: 5;
+    background-color: $white;
+    overflow: hidden;
+    &__cnt {
+        @include flex($direction: column, $justify-content: center, $align-items: center);
+        width: 50%;
+    }
+    &__close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 12px 26px;
+        font-size: 36px;
+        border: 0;
+        background-color: $white;
+        cursor: pointer;
+    }
+    &__logo {
+        width: 220px;
+        height: 180px;
+    }
+    &__link {
+        font-size: 32px;
+        font-weight: 300;
+        color: $black;
+        margin: 24px 0;
+        text-decoration: underline $orange;
+        &:hover {
+            text-decoration: underline overline $blue;
+        }
+    }
+    @include breakpoint($tablet) {
+        display: none;
+    }
+}
