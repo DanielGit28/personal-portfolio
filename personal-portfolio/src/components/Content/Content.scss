@@ -9,7 +9,14 @@
         background-color: $white;
         cursor: pointer;
     }
-
+    &__go-top {
+        position: fixed;
+        bottom: 15px;
+        right: 50px;
+        font-size: 50px;
+        cursor: pointer;
+        color: $orange;
+    }
     @include breakpoint($tablet) {
         &__menu {
             display: none;

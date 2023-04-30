@@ -1,0 +1,50 @@
+.footer {
+    width: 100%;
+    @include flex($direction: column, $justify-content: center, $align-items: center);
+    &__info {
+        width: 60%;
+        @include flex($direction: row, $justify-content: flex-start, $align-items: center);
+        &__logo {
+            width: 180px;
+            height: 180px;
+        }
+        &__text {
+            margin: 12px 0;
+        }
+    }
+    &__columns {
+        width: 60%;
+        @include flex($direction: row, $justify-content: space-around, $align-items: flex-start );
+    }
+    &__column {
+        width: 40%;
+        @include flex($direction: column, $justify-content: flex-start, $align-items: flex-start);
+        &__title {
+            font-weight: 700;
+            font-size: 24px;
+        }
+        &__link {
+            font-size: 20px;
+            font-weight: 300;
+            color: $black;
+            margin: 12px 0;
+            text-decoration: underline $orange;
+            text-align: left;
+            &:hover {
+                text-decoration: underline overline $blue;
+            }
+        }
+    }
+    @include breakpoint($tablet) {
+        @include flex($direction: row, $justify-content: center, $align-items: flex-start);
+        &__info {
+            width: 40%;
+            @include flex($direction: row, $justify-content: flex-start, $align-items: center);
+            
+        }
+        &__columns {
+            width: 40%;
+            @include flex($direction: row, $justify-content: space-around, $align-items: flex-start );
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.contact {
+    width: 100%;
+    @include flex($direction: column, $justify-content: center  , $align-items: center);
+    margin-bottom: 150px;
+    &__main {
+        width: 60%;
+        @include flex($direction: column, $justify-content: flex-start, $align-items: flex-start);
+    }
+    &__title {
+
+    }
+    &__form {
+        width: 90%;
+        @include breakpoint($laptop) {
+            width: 60%;
+        }
+    }
+    &__cnt {
+        width: 100%;
+        @include flex($direction: column, $justify-content: flex-start, $align-items: flex-start);
+        margin: 24px 0;
+    }
+    &__label {
+        font-size: 24px;
+        color: $gray;
+    }
+    &__input {
+        width: 100%;
+        padding: 16px;
+        font-size: 20px;
+        border: 2px solid $light-green;
+        color: $gray;
+        background-color: $white;
+        border-radius: 8px;
+        box-sizing: border-box;
+        &:focus {
+            border: 6px solid $light-green;
+            outline: none;
+        }
+    }
+    &__submit {
+        font-size: 24px;
+        border: 2px solid $orange;
+        padding: 20px;
+        width: 100%;
+        background-color: $white;
+        cursor: pointer;
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+}
